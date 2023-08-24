@@ -1,25 +1,14 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import {motion} from 'framer-motion'
 import './App.css';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='example-container relative'>
+      <motion.h1 animate={{fontSize: 50, x: [-200, 0], y:[100, 0] }} transition={{duration: 2,}}>Welcome this page!</motion.h1>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
